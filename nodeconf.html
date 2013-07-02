@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>crabdude.github.io by CrabDude</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/CrabDude">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>crabdude.github.io</h1>
+          <p>For all your CrabDudeness needs.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/CrabDude">CrabDude</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>NodeConf 2013</h2>
+
+<p>... ran from Thursday, June 27 to Sunday, June 30w at the outstanding <a class="anchor" href="http://www.walkercreekranch.org/">Walker Creek Ranch</a> up in Petaluma, and had single handedly the best beer selection and quantity ever encountered at a conference including buckets of both Chimay (Blue &amp; Red) and <a class="anchor" href="http://beeradvocate.com/beer/profile/180/1421">Delirium Nocturnum</a>.</p>
+
+<p>The format was unique. There were 8 workshops that everyone got to attend with unique schedules for all to ensure you were with different people at each workshop. The pre-requisite code for all the workshops was more or less in the <a class="anchor" href="https://npmjs.org/package/nodeconf2013">nodeconf2013</a> npm package. All of these talks were new-to-node friendly.</p>
+
+<p>There was also Reeses <a class="anchor" href="http://en.wikipedia.org/wiki/S'more">s'mores</a>, watering-hole <a class="anchor" href="https://en.wikipedia.org/wiki/Human_swimming">swimming</a>, multiple near-death diving attempts by me, and very delicious extremely healthy <a class="anchor" href="http://en.wikipedia.org/wiki/Farm-to-table">farm-to-table food</a>. I also got to brag on how much I love LinkedIn and how incredibly awesome my teammates are. Everyone was really excited to hear about what we're doing.</p>
+
+<h2>Workshops:</h2>
+
+<h3><a class="anchor" href="http://nodecopter.com/">Nodecopter</a>:</h3>
+
+<p>Hands down the best conference experience I've had in my life. Essentially the <a class="anchor" href="http://ardrone2.parrot.com/">Parrot AR Drone 2.0</a> creates an ad-hoc wifi network that exposes an API that the node <a class="anchor" href="https://npmjs.org/package/ar-drone">ar-drone</a> library implements, exposing a REPL and node.js API of it's own. What this means is that you can both control it via REPL AND code. Even cooler, it comes pre-programmed with all sorts of behavior like control over yaw, pitch, roll, lift, rotation, flips, dancing, etc…</p>
+
+<p>The best part about this session was the epiphany regarding the impact of <a class="anchor" href="https://en.wikipedia.org/wiki/Logic_error">logic errors</a> on hardware programming. In other words, at one point my teammate and I programmed our copter to dance and then flip, but when we realized that flipping for 3 seconds did too many flips, and shortened it to 2, I did not also shorten the dance time to 2 before it, causing the drone to dance for 3s, and then enter into a flip 2s into the dance, causing it to crash hard and impale itself on some hay baler spikes leaning against the barn. More hilarity ensued. Instead of being mortified, the speakers rejoiced in our experimentation and ensuing failure with intense laughter.</p>
+
+<h3>Arduino:</h3>
+
+<p>The <a class="anchor" href="https://github.com/rwldrn/johnny-five">johnny-five</a> node.js module uses the arduino Firmata USB interface to send write node.js programs to control your arduino. I built a circuit that increased an LED's brightness according to the temperature on the thermometer. It was pretty fun playing with circuits and breadboards again. (I was an Electrical Engineer in college)</p>
+
+<h3>Core:</h3>
+
+<p>The goal of this session was to do everything necessary to add a function to node.js' C++ and corresponding JavaScript, and the appropriate tests to submit a successful patch. Isaac was excellent in accomplishing this workshop's stated goal. (<a href="https://github.com/mikeal/nodeconf2013/blob/master/slides/core/how-to-node-core.pdf?raw=true">Slides</a>, <a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/core">Code</class="anchor" a>)</p>
+
+<h3>Domains:</h3>
+
+<p>Introduction to domains (async error handling) in node.js. If you've ever talked to me about errors in node, you'll know that I have have a lot of experience dealing with errors/domains, possibly more than anyone else (at least on the JavaScript side). It was fairly good, even though what it was teaching was literally in <a class="anchor" href="http://nodejs.org/docs/latest/api/all.html#all_warning_don_t_ignore_errors">disagreement with the docs</a>. Feel free to hit me up for details on the <a class="anchor" href="https://github.com/joyent/node/issues/5114">cognitive</a> <a class="anchor" href="https://github.com/joyent/node/issues/5149">disonance</a> that is error handling in node.js. (<a href="http://othiym23.github.io/nodeconf2013-domains/">Slides</class="anchor" a>)</p>
+
+<h3>Streams:</h3>
+
+<p>Substack and Max Ogden put together a fantastic game / interactive tutorial of sorts teaching you the basic of streams and incidentally the new streaming API to a degree. <a class="anchor" href="https://npmjs.org/package/stream-adventure">Pipe to your heart's content!</a></p>
+
+<h3>Dtrace:</h3>
+
+<p><a class="anchor" href="http://en.wikipedia.org/wiki/DTrace">Dtrace</a> is a highly performant performance monitoring and debugging tool that was originally built for <a class="anchor" href="http://en.wikipedia.org/wiki/SmartOS">SmartOS</a> (Joyent's Solaris based OS). It also happens to run on FreeBSD based systems like OSX. No linux yet though, so we cannot run it in production, but for local debugging and performance analysis in node.js, it is unparalleled (albeit very daunting to get started with). Coolest features? Flamegraphs and meta to error (aka C++ to JavaScript) stack traces. (<a href="http://dtrace.org/blogs/dap/files/2012/07/nodeconf.pdf">Slides</class="anchor" a>)</p>
+
+<h3>Web Services:</h3>
+
+<p>This was mostly a <a class="anchor" href="http://spumko.github.io/">Hapi</a> vs <a class="anchor" href="http://expressjs.com/">Express</a> comparison. Hapi is an exciting framework with a lot of promise, especially since <a class="anchor" href="http://flatironjs.org/">Flatiron</a> hasn't quite filled the gap like many of us hoped it would. There are some very nice AOP-style request lifetime hooks in Hapi. There's also a nice declarative routing API as well. (<a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/services">Slides/Code</class="anchor" a>)</p>
+
+<h3>Distributed Systems:</h3>
+
+<p>The goal here was to implement a peer-to-peer distributed chat app that we found out at the end was actually the implementation of an Amazon white paper, <a class="anchor" href="http://www.cs.cornell.edu/home/rvr/papers/flowgossip.pdf">"Efﬁcient Reconciliation and Flow Control for Anti-Entropy Protocols"</a>. In short, we succeeded. <a class="anchor" href="https://github.com/Raynos/distributed">Distributed Code</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42165774-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
