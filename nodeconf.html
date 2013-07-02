@@ -57,11 +57,11 @@
 
 <h3>Core:</h3>
 
-<p>The goal of this session was to do everything necessary to add a function to node.js' C++ and corresponding JavaScript, and the appropriate tests to submit a successful patch. Isaac was excellent in accomplishing this workshop's stated goal. (<a href="https://github.com/mikeal/nodeconf2013/blob/master/slides/core/how-to-node-core.pdf?raw=true">Slides</a>, <a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/core">Code</class="anchor" a>)</p>
+<p>The goal of this session was to do everything necessary to add a function to node.js' C++ and corresponding JavaScript, and the appropriate tests to submit a successful patch. Isaac was excellent in accomplishing this workshop's stated goal. (<a href="https://github.com/mikeal/nodeconf2013/blob/master/slides/core/how-to-node-core.pdf?raw=true">Slides</a>, <a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/core">Code</a>)</p>
 
 <h3>Domains:</h3>
 
-<p>Introduction to domains (async error handling) in node.js. If you've ever talked to me about errors in node, you'll know that I have have a lot of experience dealing with errors/domains, possibly more than anyone else (at least on the JavaScript side). It was fairly good, even though what it was teaching was literally in <a class="anchor" href="http://nodejs.org/docs/latest/api/all.html#all_warning_don_t_ignore_errors">disagreement with the docs</a>. Feel free to hit me up for details on the <a class="anchor" href="https://github.com/joyent/node/issues/5114">cognitive</a> <a class="anchor" href="https://github.com/joyent/node/issues/5149">disonance</a> that is error handling in node.js. (<a href="http://othiym23.github.io/nodeconf2013-domains/">Slides</class="anchor" a>)</p>
+<p>Introduction to domains (async error handling) in node.js. If you've ever talked to me about errors in node, you'll know that I have have a lot of experience dealing with errors/domains, possibly more than anyone else (at least on the JavaScript side). It was fairly good, even though what it was teaching was literally in <a class="anchor" href="http://nodejs.org/docs/latest/api/all.html#all_warning_don_t_ignore_errors">disagreement with the docs</a>. Feel free to hit me up for details on the <a class="anchor" href="https://github.com/joyent/node/issues/5114">cognitive</a> <a class="anchor" href="https://github.com/joyent/node/issues/5149">disonance</a> that is error handling in node.js. (<a href="http://othiym23.github.io/nodeconf2013-domains/">Slides</a>)</p>
 
 <h3>Streams:</h3>
 
@@ -69,16 +69,30 @@
 
 <h3>Dtrace:</h3>
 
-<p><a class="anchor" href="http://en.wikipedia.org/wiki/DTrace">Dtrace</a> is a highly performant performance monitoring and debugging tool that was originally built for <a class="anchor" href="http://en.wikipedia.org/wiki/SmartOS">SmartOS</a> (Joyent's Solaris based OS). It also happens to run on FreeBSD based systems like OSX. No linux yet though, so we cannot run it in production, but for local debugging and performance analysis in node.js, it is unparalleled (albeit very daunting to get started with). Coolest features? Flamegraphs and meta to error (aka C++ to JavaScript) stack traces. (<a href="http://dtrace.org/blogs/dap/files/2012/07/nodeconf.pdf">Slides</class="anchor" a>)</p>
+<p><a class="anchor" href="http://en.wikipedia.org/wiki/DTrace">Dtrace</a> is a highly performant performance monitoring and debugging tool that was originally built for <a class="anchor" href="http://en.wikipedia.org/wiki/SmartOS">SmartOS</a> (Joyent's Solaris based OS). It also happens to run on FreeBSD based systems like OSX. No linux yet though, so we cannot run it in production, but for local debugging and performance analysis in node.js, it is unparalleled (albeit very daunting to get started with). Coolest features? Flamegraphs and meta to error (aka C++ to JavaScript) stack traces. (<a href="http://dtrace.org/blogs/dap/files/2012/07/nodeconf.pdf">Slides</a>)</p>
 
 <h3>Web Services:</h3>
 
-<p>This was mostly a <a class="anchor" href="http://spumko.github.io/">Hapi</a> vs <a class="anchor" href="http://expressjs.com/">Express</a> comparison. Hapi is an exciting framework with a lot of promise, especially since <a class="anchor" href="http://flatironjs.org/">Flatiron</a> hasn't quite filled the gap like many of us hoped it would. There are some very nice AOP-style request lifetime hooks in Hapi. There's also a nice declarative routing API as well. (<a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/services">Slides/Code</class="anchor" a>)</p>
+<p>This was mostly a <a class="anchor" href="http://spumko.github.io/">Hapi</a> vs <a class="anchor" href="http://expressjs.com/">Express</a> comparison. Hapi is an exciting framework with a lot of promise, especially since <a class="anchor" href="http://flatironjs.org/">Flatiron</a> hasn't quite filled the gap like many of us hoped it would. There are some very nice AOP-style request lifetime hooks in Hapi. There's also a nice declarative routing API as well. (<a href="https://github.com/mikeal/nodeconf2013/tree/master/slides/services">Slides/Code</a>)</p>
 
 <h3>Distributed Systems:</h3>
 
 <p>The goal here was to implement a peer-to-peer distributed chat app that we found out at the end was actually the implementation of an Amazon white paper, <a class="anchor" href="http://www.cs.cornell.edu/home/rvr/papers/flowgossip.pdf">"Efﬁcient Reconciliation and Flow Control for Anti-Entropy Protocols"</a>. In short, we succeeded. <a class="anchor" href="https://github.com/Raynos/distributed">Distributed Code</a></p>
       </section>
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'crabdudegithub'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
