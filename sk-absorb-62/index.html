@@ -165,7 +165,6 @@
   .test-filter { box-sizing: border-box; width: 100%; padding: .65rem .7rem; margin: .35rem 0 .5rem; border: 1px solid var(--line); font: inherit; }
   .filter-status { color: var(--muted); font-size: .9rem; }
   .test-list { list-style: none; padding: 0; margin: 1rem 0 2rem; }
-  .test-row { display: grid; grid-template-columns: 2.4rem minmax(12rem, 1fr) 4.5rem minmax(9rem, .7fr) minmax(11rem, .9fr); gap: .55rem; align-items: start; padding: .7rem 0; border-top: 1px solid var(--line); }
   .test-row.hidden { display: none; }
   .test-ordinal { font-weight: 700; }
   .test-case { overflow-wrap: anywhere; }
@@ -173,13 +172,13 @@
   .test-share { font-weight: 700; }
   .historical-heading { margin-top: 2.5rem; }
   .historical-note { background: #fff; border-left: 3px solid var(--family); padding: .7rem .85rem; }
-  @media (max-width: 760px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } .test-row { grid-template-columns: 2rem 1fr; } .test-share, .test-technical { grid-column: 2; } }
+  @media (max-width: 760px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } }
 .static-link-notice { margin: 1rem 0; padding: .85rem 1rem; background: #fff7d6; border: 1px solid #d9b44a; border-radius: 8px; } .test-static { font-weight: 700; } .test-assertion { grid-column: 2 / -1; margin: .35rem 0; } .transcript { grid-column: 2 / -1; background: #fff; border: 1px solid var(--line); padding: .5rem .7rem; } .turn { margin: .7rem 0; } .turn pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: .25rem 0 0; }
 
   .audit-withdrawn { margin: 1rem 0 1.4rem; padding: 1rem; background: #fff0f0; border: 2px solid #9b2c2c; color: #6f1d1d; }
-  .test-row { grid-template-columns: 2.5rem minmax(0, 1fr) auto; gap: .75rem; align-items: start; }
+  .test-row { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr) auto auto; gap: .75rem; align-items: start; padding: .7rem 0; border-top: 1px solid var(--line); }
   .test-row .test-share { white-space: nowrap; }
-  .test-technical { grid-column: 2 / -1; color: var(--muted); font-size: .88rem; }
+  .test-technical { grid-column: 1 / -1; color: var(--muted); font-size: .88rem; }
   .test-technical summary { cursor: pointer; color: var(--ink); font-weight: 600; }
   .test-technical p { margin: .35rem 0 0; }
   @media (max-width: 760px) { .test-row { grid-template-columns: 2rem minmax(0, 1fr); } .test-share, .test-technical { grid-column: 2; } .test-row .test-share { white-space: normal; } }
